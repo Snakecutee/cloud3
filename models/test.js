@@ -4,7 +4,7 @@ const acc_query=
 {
     name: 'fetch-user',
     text:'SELECT * FROM users WHERE name=$1 AND passwd=$2',
-    values:["tan","12345"]
+    values:["vandai","12345"]
 }
 query_data= await pg_conn.query(acc_query);
 console.log(query_data);
